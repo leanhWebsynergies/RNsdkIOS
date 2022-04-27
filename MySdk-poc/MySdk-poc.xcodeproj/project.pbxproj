@@ -181,6 +181,7 @@
 				A026661A2555B4C500CB1504 /* Frameworks */,
 				A026661B2555B4C500CB1504 /* Resources */,
 				7AA56161797588C05E0E6F7B /* [CP] Embed Pods Frameworks */,
+				F4699806431B73836986FE42 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,6 +220,7 @@
 				A026663B2555B4C800CB1504 /* Frameworks */,
 				A026663C2555B4C800CB1504 /* Resources */,
 				7767F3E0AF1A05FC214157BC /* [CP] Embed Pods Frameworks */,
+				DC0B27EC28076C6509DFC178 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -398,6 +400,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MySdk-poc/Pods-MySdk-poc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC0B27EC28076C6509DFC178 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySdk-poc-MySdk-pocUITests/Pods-MySdk-poc-MySdk-pocUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySdk-poc-MySdk-pocUITests/Pods-MySdk-poc-MySdk-pocUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MySdk-poc-MySdk-pocUITests/Pods-MySdk-poc-MySdk-pocUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4699806431B73836986FE42 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySdk-poc/Pods-MySdk-poc-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySdk-poc/Pods-MySdk-poc-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MySdk-poc/Pods-MySdk-poc-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

@@ -1,5 +1,13 @@
 PODS:
+  - AppAuth (1.5.0):
+    - AppAuth/Core (= 1.5.0)
+    - AppAuth/ExternalUserAgent (= 1.5.0)
+  - AppAuth/Core (1.5.0)
+  - AppAuth/ExternalUserAgent (1.5.0):
+    - AppAuth/Core
   - boost-for-react-native (1.63.0)
+  - BVLinearGradient (2.5.4):
+    - React
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.61.5)
   - FBReactNativeSpec (0.61.5):
@@ -19,6 +27,14 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
+  - GoogleSignIn (5.0.2):
+    - AppAuth (~> 1.2)
+    - GTMAppAuth (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GTMAppAuth (1.2.3):
+    - AppAuth/Core (~> 1.4)
+    - GTMSessionFetcher/Core (~> 1.5)
+  - GTMSessionFetcher/Core (1.7.1)
   - libwebp (1.2.1):
     - libwebp/demux (= 1.2.1)
     - libwebp/mux (= 1.2.1)
@@ -201,6 +217,28 @@ PODS:
     - React-cxxreact (= 0.61.5)
     - React-jsi (= 0.61.5)
   - React-jsinspector (0.61.5)
+  - react-native-camera (3.4.0):
+    - React
+    - react-native-camera/RCT (= 3.4.0)
+    - react-native-camera/RN (= 3.4.0)
+  - react-native-camera/RCT (3.4.0):
+    - React
+  - react-native-camera/RN (3.4.0):
+    - React
+  - react-native-contacts (7.0.4):
+    - React-Core
+  - react-native-google-analytics-bridge (7.1.0):
+    - react-native-google-analytics-bridge/Core (= 7.1.0)
+  - react-native-google-analytics-bridge/Core (7.1.0):
+    - React
+  - react-native-image-picker (1.0.2):
+    - React
+  - react-native-image-resizer (1.2.2):
+    - React
+  - react-native-randombytes (3.6.1):
+    - React-Core
+  - react-native-sensitive-info (6.0.0-alpha.9):
+    - React-Core
   - React-RCTActionSheet (0.61.5):
     - React-Core/RCTActionSheetHeaders (= 0.61.5)
   - React-RCTAnimation (0.61.5):
@@ -258,21 +296,63 @@ PODS:
     - React-jsi (= 0.61.5)
     - ReactCommon/jscallinvoker (= 0.61.5)
     - ReactCommon/turbomodule/core (= 0.61.5)
+  - RNCAsyncStorage (1.5.0):
+    - React
+  - RNCClipboard (1.5.1):
+    - React-Core
+  - RNDeviceInfo (5.5.8):
+    - React
   - RNFastImage (8.5.11):
     - React-Core
     - SDWebImage (~> 5.11.1)
     - SDWebImageWebPCoder (~> 0.8.4)
+  - RNFS (2.13.3):
+    - React
+  - RNGestureHandler (1.6.1):
+    - React
+  - RNGoogleSignin (4.0.3):
+    - GoogleSignIn (~> 5.0.0)
+    - React
+  - RNRate (1.2.9):
+    - React-Core
+  - RNReanimated (1.0.0):
+    - React
+  - RNShare (3.0.0):
+    - React
+  - RNVectorIcons (6.6.0):
+    - React
   - SDWebImage (5.11.1):
     - SDWebImage/Core (= 5.11.1)
   - SDWebImage/Core (5.11.1)
   - SDWebImageWebPCoder (0.8.4):
     - libwebp (~> 1.0)
     - SDWebImage/Core (~> 5.10)
+  - TouchID (4.4.1):
+    - React
   - Yoga (1.14.0)
 
 DEPENDENCIES:
+  - "BVLinearGradient (from `git@github.com:brentvatne/react-native-linear-gradient.git`, tag `v2.5.4`)"
   - MySdk-native (from `../MySdk-native`)
+  - "react-native-camera (from `git@github.com:react-native-community/react-native-camera`, tag `v3.4.0`)"
+  - "react-native-contacts (from `git@github.com:rt2zz/react-native-contacts.git`)"
+  - "react-native-google-analytics-bridge (from `git@github.com:idehub/react-native-google-analytics-bridge`, tag `v7.1.0`)"
+  - "react-native-image-picker (from `git@github.com:react-native-community/react-native-image-picker.git`, tag `v1.0.2`)"
+  - "react-native-image-resizer (from `git@github.com:bamlab/react-native-image-resizer.git`, tag `v1.2.2`)"
+  - "react-native-randombytes (from `git@github.com:mvayngrib/react-native-randombytes.git`)"
+  - "react-native-sensitive-info (from `git@github.com:mCodex/react-native-sensitive-info.git`)"
+  - "RNCAsyncStorage (from `git@github.com:react-native-community/react-native-async-storage.git`, tag `v1.5.0`)"
+  - "RNCClipboard (from `git@github.com:react-native-community/clipboard`, tag `v1.5.1`)"
+  - "RNDeviceInfo (from `git@github.com:react-native-community/react-native-device-info.git`, tag `v5.5.8`)"
   - "RNFastImage (from `git@github.com:DylanVann/react-native-fast-image.git`, tag `v8.5.11`)"
+  - "RNFS (from `git@github.com:itinance/react-native-fs`, tag `v2.13.3`)"
+  - "RNGestureHandler (from `git@github.com:software-mansion/react-native-gesture-handler`, tag `1.6.1`)"
+  - "RNGoogleSignin (from `git@github.com:react-native-community/google-signin.git`, tag `v4.0.3`)"
+  - "RNRate (from `git@github.com:KjellConnelly/react-native-rate.git`, branch `master`)"
+  - "RNReanimated (from `git@github.com:kmagiera/react-native-reanimated.git`, tag `1.0.0`)"
+  - "RNShare (from `git@github.com:react-native-community/react-native-share.git`, tag `v3.0.0`)"
+  - "RNVectorIcons (from `git@github.com:oblador/react-native-vector-icons.git`, tag `v6.6.0`)"
+  - "TouchID (from `git@github.com:naoufal/react-native-touch-id.git`)"
 
 SPEC REPOS:
   https://github.com/leanhWebsynergies/react-native-podspec.git:
@@ -302,30 +382,149 @@ SPEC REPOS:
     - ReactCommon
     - Yoga
   trunk:
+    - AppAuth
     - boost-for-react-native
+    - GoogleSignIn
+    - GTMAppAuth
+    - GTMSessionFetcher
     - libwebp
     - SDWebImage
     - SDWebImageWebPCoder
 
 EXTERNAL SOURCES:
+  BVLinearGradient:
+    :git: "git@github.com:brentvatne/react-native-linear-gradient.git"
+    :tag: v2.5.4
   MySdk-native:
     :path: "../MySdk-native"
+  react-native-camera:
+    :git: "git@github.com:react-native-community/react-native-camera"
+    :tag: v3.4.0
+  react-native-contacts:
+    :git: "git@github.com:rt2zz/react-native-contacts.git"
+  react-native-google-analytics-bridge:
+    :git: "git@github.com:idehub/react-native-google-analytics-bridge"
+    :tag: v7.1.0
+  react-native-image-picker:
+    :git: "git@github.com:react-native-community/react-native-image-picker.git"
+    :tag: v1.0.2
+  react-native-image-resizer:
+    :git: "git@github.com:bamlab/react-native-image-resizer.git"
+    :tag: v1.2.2
+  react-native-randombytes:
+    :git: "git@github.com:mvayngrib/react-native-randombytes.git"
+  react-native-sensitive-info:
+    :git: "git@github.com:mCodex/react-native-sensitive-info.git"
+  RNCAsyncStorage:
+    :git: "git@github.com:react-native-community/react-native-async-storage.git"
+    :tag: v1.5.0
+  RNCClipboard:
+    :git: "git@github.com:react-native-community/clipboard"
+    :tag: v1.5.1
+  RNDeviceInfo:
+    :git: "git@github.com:react-native-community/react-native-device-info.git"
+    :tag: v5.5.8
   RNFastImage:
     :git: "git@github.com:DylanVann/react-native-fast-image.git"
     :tag: v8.5.11
+  RNFS:
+    :git: "git@github.com:itinance/react-native-fs"
+    :tag: v2.13.3
+  RNGestureHandler:
+    :git: "git@github.com:software-mansion/react-native-gesture-handler"
+    :tag: 1.6.1
+  RNGoogleSignin:
+    :git: "git@github.com:react-native-community/google-signin.git"
+    :tag: v4.0.3
+  RNRate:
+    :branch: master
+    :git: "git@github.com:KjellConnelly/react-native-rate.git"
+  RNReanimated:
+    :git: "git@github.com:kmagiera/react-native-reanimated.git"
+    :tag: 1.0.0
+  RNShare:
+    :git: "git@github.com:react-native-community/react-native-share.git"
+    :tag: v3.0.0
+  RNVectorIcons:
+    :git: "git@github.com:oblador/react-native-vector-icons.git"
+    :tag: v6.6.0
+  TouchID:
+    :git: "git@github.com:naoufal/react-native-touch-id.git"
 
 CHECKOUT OPTIONS:
+  BVLinearGradient:
+    :git: "git@github.com:brentvatne/react-native-linear-gradient.git"
+    :tag: v2.5.4
+  react-native-camera:
+    :git: "git@github.com:react-native-community/react-native-camera"
+    :tag: v3.4.0
+  react-native-contacts:
+    :commit: 821016232c9528eec16f33014ebf073c79d272ad
+    :git: "git@github.com:rt2zz/react-native-contacts.git"
+  react-native-google-analytics-bridge:
+    :git: "git@github.com:idehub/react-native-google-analytics-bridge"
+    :tag: v7.1.0
+  react-native-image-picker:
+    :git: "git@github.com:react-native-community/react-native-image-picker.git"
+    :tag: v1.0.2
+  react-native-image-resizer:
+    :git: "git@github.com:bamlab/react-native-image-resizer.git"
+    :tag: v1.2.2
+  react-native-randombytes:
+    :commit: 26688627d455bee9bf401f053182699414bc6f51
+    :git: "git@github.com:mvayngrib/react-native-randombytes.git"
+  react-native-sensitive-info:
+    :commit: 495dd7f08c077f5744e56803e45f54787df3dab3
+    :git: "git@github.com:mCodex/react-native-sensitive-info.git"
+  RNCAsyncStorage:
+    :git: "git@github.com:react-native-community/react-native-async-storage.git"
+    :tag: v1.5.0
+  RNCClipboard:
+    :git: "git@github.com:react-native-community/clipboard"
+    :tag: v1.5.1
+  RNDeviceInfo:
+    :git: "git@github.com:react-native-community/react-native-device-info.git"
+    :tag: v5.5.8
   RNFastImage:
     :git: "git@github.com:DylanVann/react-native-fast-image.git"
     :tag: v8.5.11
+  RNFS:
+    :git: "git@github.com:itinance/react-native-fs"
+    :tag: v2.13.3
+  RNGestureHandler:
+    :git: "git@github.com:software-mansion/react-native-gesture-handler"
+    :tag: 1.6.1
+  RNGoogleSignin:
+    :git: "git@github.com:react-native-community/google-signin.git"
+    :tag: v4.0.3
+  RNRate:
+    :commit: dd2314ecdf0efd5afa21c96f35f8a9f9d8612874
+    :git: "git@github.com:KjellConnelly/react-native-rate.git"
+  RNReanimated:
+    :git: "git@github.com:kmagiera/react-native-reanimated.git"
+    :tag: 1.0.0
+  RNShare:
+    :git: "git@github.com:react-native-community/react-native-share.git"
+    :tag: v3.0.0
+  RNVectorIcons:
+    :git: "git@github.com:oblador/react-native-vector-icons.git"
+    :tag: v6.6.0
+  TouchID:
+    :commit: 5e16c8ed645b770e8925ef7c2cce4a2d2f550fb7
+    :git: "git@github.com:naoufal/react-native-touch-id.git"
 
 SPEC CHECKSUMS:
+  AppAuth: 80317d99ac7ff2801a2f18ff86b48cd315ed465d
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
+  BVLinearGradient: 8cbc5155c978f2e43098818c91d206d07aae6d30
   DoubleConversion: 5c9ce68940263addb34b1297fea24d650a32b92f
   FBLazyVector: 0e8807f53d869dd75f1376faca746ecf41d53e27
   FBReactNativeSpec: bb847cfa80e0f57df8f6b552cbe92f43264a46d4
   Folly: 67e5794bb00e6ea586292080eebb5e1f3529bc5b
   glog: 4ba5f5b95b18fbb84fa3222fe8f62d9825a3d15e
+  GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
+  GTMAppAuth: 987526d41b07efb1bedda5e936fe0cb718a03113
+  GTMSessionFetcher: 4577a4cc914a5a07c40a8a0ad0acc22080418c2d
   libwebp: 98a37e597e40bfdb4c911fc98f2c53d0b12d05fc
   MySdk-native: 14f458f0dab50be2f5948795bd7ef65de210505b
   RCTRequired: b3f43303b9302c189ae99b43bffba09434acc723
@@ -337,6 +536,13 @@ SPEC CHECKSUMS:
   React-jsi: b2a9010905a9a96a9fe1db8d3587a4ddf0ff7e66
   React-jsiexecutor: 4d5be78c10877299734a23fa3e31b9bcc90da837
   React-jsinspector: 8f6c61a29a39694664557b21176f635c172ccac8
+  react-native-camera: f4f2144140ae1e808cad97cc7caf013767c11f1b
+  react-native-contacts: 1bff4c47816d611f26b06fa8b3eaf2db4d1b2c86
+  react-native-google-analytics-bridge: fac6becc9475cae635bff51382be089ea97bddda
+  react-native-image-picker: 5c15ac0251475ae0b9f21e17d08d7c28db847abc
+  react-native-image-resizer: e794dc2dbd0db0a1062ac5fa425d5df04c1970ca
+  react-native-randombytes: 421f1c7d48c0af8dbcd471b0324393ebf8fe7846
+  react-native-sensitive-info: d44e909d065f9c0e15734245e5dd6a24b82e3dcd
   React-RCTActionSheet: efb3ecef718d7d5dfe226726256b2166b427d85f
   React-RCTAnimation: 6e5f56fc7c7230922aa87f729eb180ae4a130a66
   React-RCTBlob: 09a81223d470f0fb6b07e31b66106028e8d56680
@@ -347,11 +553,22 @@ SPEC CHECKSUMS:
   React-RCTText: 8b55494e7fa269af6f137a50d73f667175ec02e7
   React-RCTVibration: 8ff8eed33c866e89c0a979514be0871762e95a4f
   ReactCommon: 02c3295405c8f4156cb66851baa51438fa4db6a8
+  RNCAsyncStorage: 9436928b444c5f5361960a7eea051a697c244b68
+  RNCClipboard: 41d8d918092ae8e676f18adada19104fa3e68495
+  RNDeviceInfo: 655265668063a05fff096c6819da0b7289753ef7
   RNFastImage: 1f2cab428712a4baaf78d6169eaec7f622556dd7
+  RNFS: c9bbde46b0d59619f8e7b735991c60e0f73d22c1
+  RNGestureHandler: 8f09cd560f8d533eb36da5a6c5a843af9f056b38
+  RNGoogleSignin: ccf71ee4b6cfd324fd788a41e457e2043838c0d9
+  RNRate: 94f57c773e155ca0d0aeeba9c10a32bce9030daf
+  RNReanimated: 9497464b378759f538c539df105cda235de496c5
+  RNShare: 0e19ddb0bf338b62702ce1d9e001ee14effa68a8
+  RNVectorIcons: 0bb4def82230be1333ddaeee9fcba45f0b288ed4
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SDWebImageWebPCoder: f93010f3f6c031e2f8fb3081ca4ee6966c539815
+  TouchID: ba4c656d849cceabc2e4eef722dea5e55959ecf4
   Yoga: 267c4fc612b16d4f5efe03e18ee84639f827cda2
 
-PODFILE CHECKSUM: 9b7f121d143c32bb99fb64626865e58d7f98e2c7
+PODFILE CHECKSUM: 5f0c787aff63c5e5beb279f28dcf8355e7644e74
 
 COCOAPODS: 1.11.2

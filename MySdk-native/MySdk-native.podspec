@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   
   s.license      = "MIT"
   s.author       = { "leanhWebsynergies" => "lee.tran@websynergies.com" }
-  s.platform     = :ios, "9.0"
+  s.platform     = :ios, "11.0"
   s.source       = { :git => "https://github.com/leanhWebsynergies", :tag => "v#{s.version}" }
   s.source_files = "MySdk-native/**/*.{swift,h, m}", "MySdk-native/*.{swift,h, m}"
   s.resources      = "MySdk-native/*.bundle"
@@ -26,4 +26,5 @@ Pod::Spec.new do |s|
   s.dependency 'RCTTypeSafety'
 
   s.dependency 'RNFastImage'
+ 
 end

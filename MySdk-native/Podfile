@@ -16,14 +16,5 @@ target 'MySdk-native' do
   pod 'RCTTypeSafety'
   
   pod 'RNFastImage', :git=> 'git@github.com:DylanVann/react-native-fast-image.git', :tag=> 'v8.5.11'
-  pod 'BVLinearGradient', :git=> 'git@github.com/brentvatne/react-native-linear-gradient.git', :tag=> '2.5.4'
-  pod 'react-native-camera', :git=> 'git@github.com/react-native-community/react-native-camera', :tag=> '3.4.0'
-  pod 'react-native-contacts', :git=> 'git@github.com/rt2zz/react-native-contacts.git', :tag=> '5.1.0'
-  pod 'react-native-google-analytics-bridge', :git=> 'git@github.com/idehub/react-native-google-analytics-bridge', :tag=> '7.1.0'
-  pod 'react-native-haptic-feedback', :git=> 'git@github.com/author/RNReactNativeHapticFeedback.git', :tag=> '1.8.0'
-  pod 'react-native-image-picker', :git=> 'git@github.com/react-native-community/react-native-image-picker.git', :tag=> '1.0.2'
-  pod 'react-native-image-resizer', :git=> 'git@github.com/bamlab/react-native-image-resizer.git', :tag=> '1.2.2'
-  pod 'react-native-local-authentication', :git=> 'git@github.com/bebnev/react-native-local-authentication.git', :tag=> '1.2.5'
-
-
-end
+  
+  end

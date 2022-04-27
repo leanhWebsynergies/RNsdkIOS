@@ -1,12 +1,6 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React from 'react';
+import {TextInput} from 'react-native';
+import {Dimensions} from 'react-native';
 import {
   SafeAreaView,
   StyleSheet,
@@ -29,51 +23,37 @@ const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <FastImage
-        resizeMode="cover"
-        style={{width: '100%', height: 250}}
-        source={{
-          uri:
-            'https://www.appstud.com/wp-content/uploads/2018/03/React-Native-Titre.png',
-        }}
-      />
+
       <SafeAreaView>
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
+          <Text
+            style={{
+              textAlign: 'center',
+              justifyContent: 'center',
+              paddingVertical: 40,
+              fontSize: 35,
+              fontWeight: '600',
+            }}>
+            Test Create Identity
+          </Text>
+
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
+              <TextInput
+                style={styles.inputStyle}
+                placeholderTextColor="gray"
+                placeholder="Your Email"
+              />
             </View>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
+              <TextInput
+                style={styles.inputStyle}
+                placeholderTextColor="gray"
+                placeholder="Your Name"
+              />
             </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
           </View>
         </ScrollView>
       </SafeAreaView>
@@ -95,6 +75,7 @@ const styles = StyleSheet.create({
   sectionContainer: {
     marginTop: 32,
     paddingHorizontal: 24,
+    paddingBottom: 10,
   },
   sectionTitle: {
     fontSize: 24,
@@ -117,6 +98,15 @@ const styles = StyleSheet.create({
     padding: 4,
     paddingRight: 12,
     textAlign: 'right',
+  },
+  inputStyle: {
+    width: '100%',
+    height: Dimensions.get('window').width / 8,
+    borderWidth: 1,
+    borderRadius: 8,
+    padding: 9,
+    borderColor: '#D2D4DA',
+    paddingLeft: 50,
   },
 });
 
